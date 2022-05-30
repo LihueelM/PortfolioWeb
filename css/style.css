@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poppins:wght@200;300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap");
+*, ::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+main {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 2.1px;
+  scroll-behavior: smooth; }
+  main section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; }
+  main h1 {
+    text-align: center;
+    font-size: 4rem; }
+
+.no-parallax, .no-parallax--up {
+  background-color: whitesmoke;
+  z-index: 999;
+  height: 100vh; }
+
+.no-parallax--up {
+  margin-top: -57.81px; }
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1; }
+
+.bg::after {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/parallax-02.jpg"); }
+
+.navbar__scss {
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: sticky;
+  top: 0; }
+  .navbar__scss a {
+    font-size: 1.2rem;
+    color: white; }
+  .navbar__scss a:hover {
+    color: #da8aff; }
+
+:root {
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+
+.sobre__mi {
+  margin-top: 167.81px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.name {
+  display: flex;
+  font-size: 3.5rem;
+  margin-bottom: 0.5em;
+  font-weight: 1000;
+  align-items: flex-start;
+  width: 36%; }
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 32%; }
+
+.item {
+  position: relative;
+  padding-left: 0.5rem;
+  animation-name: flechas;
+  animation-duration: 3.1s;
+  animation-fill-mode: forwards; }
+
+.descripcion {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  height: 100%;
+  margin-top: 2rem; }
+
+@keyframes flechas {
+  0% {
+    clip-path: var(--clippy); }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+    display: block;
+    background-color: #5f4beb;
+    color: whitesmoke;
+    z-index: -1; } }

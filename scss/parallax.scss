@@ -1,0 +1,41 @@
+main{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 2.1px;
+    scroll-behavior: smooth;
+    section{
+        transform-style: preserve-3d;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+    }h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+.no-parallax{
+    background-color: whitesmoke;
+    z-index:999;      
+    height: 100vh;  
+}
+.no-parallax--up{
+    @extend .no-parallax;
+    margin-top:-57.81px;
+}
+.parallax::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+.bg::after{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../assets/parallax-02.jpg");   
+};
