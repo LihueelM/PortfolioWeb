@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio - Lihueel Mansilla</title>
 </head>
-<body>     
+<body>   
+  <!-- Proyecto Portfolio -->  
     <main>
         <header class="no-parallax--navbar navbar__scss">
+          <!-- Barra de navegacion sticky -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="index.html"><img src="#" alt="Logo"></a>
@@ -27,17 +29,60 @@
                 </div>
               </nav>
         </header>
+        <!-- Seccion parallax "Sobre mi" -->
         <section class="parallax-01" id="sobreMi">
-          <div class="sobre__mi">
-            <h1 class="name item">Lihueel Mansilla</h1>
+          <div class=" container sobre__mi">
+            <h1 class="name item">Hola! Mi nombre es Lihueel Mansilla</h1>
             <h2 class="title item">Desarrollador Web</h2>
             <div class="container descripcion">
-              <p>Hola! Mi nombre es Lihueel Mansilla. Actualmente estoy cursando la carrera de desarrollador full stack en la plataforma CoderHouse. Ademas he completado una diplomatura de desarrollo y diseño de videojuegos en la Universidad Nacional Tecnologica de Argentina.<br><br>Mi meta es participar dentro de una empresa con la cual pueda desarrollarme profesional en este rubro que tanto me apasiona y poder aprender de gente mas experimentada<br><br>Soy una persona extremadamente curiosa y motivada a seguir aprendiendo constantemente todo tipo de tecnologias.</p>
+              <p>Actualmente cursando la carrera de desarrollador full stack en la plataforma CoderHouse. Ademas he completado una diplomatura de desarrollo y diseño de videojuegos en la Universidad Nacional Tecnologica de Argentina, utilizando tecnologias como C# y el motor grafico Unity</p>
             </div>
           </div>
         </section>
-        <section class="parallax-02" id="tecnologias"><h1>Hola</h1></section>
-        <section class="parallax-03" id="contacto"></section>
+        <!-- Seccion parallax "Tecnologias" -->
+        <section class="parallax-02" id="tecnologias">
+          <div class="container tecnologias">
+            <h2>Estas son las tecnologias que utilizo actualmente</h2>
+            <!-- Contenedor de cards -->
+            <div class="grid-container--tecnologias">
+              <div class="itemTecnologia"><img src="images/html5.jpg" alt="HTML5">
+                <!-- Animacion sobre cards -->
+                <div class="overlay">
+                  HTML5
+                </div>
+              </div>
+              <div class="itemTecnologia"class="itemTecnologia"><img src="images/css3.jpg" alt="CSS3">
+                <div class="overlay">
+                  CSS3
+                </div>
+              </div>
+              <div class="itemTecnologia"><img src="images/Javascript.jpg" alt="HTML5">
+                <div class="overlay">
+                  JAVASCRIPT
+                </div>
+              </div>
+              <div class="itemTecnologia"><img src="images/git.jpg" alt="HTML5">
+                <div class="overlay">
+                  GIT
+                </div>
+              </div>
+              <div class="itemTecnologia"><img src="images/bootstrap.png" alt="HTML5">
+                <div class="overlay">
+                  BOOTSTRAP
+                </div>
+              </div>
+              <div class="itemTecnologia"><img src="images/nodejs.png" alt="HTML5">
+                <div class="overlay">
+                  NODE JS
+                </div>
+              </div>
+            </div>
+          </div>          
+        </section>
+        <!-- Seccion parallax Contacto -->
+        <section class="parallax-03" id="contacto">
+          
+        </section>
     </main>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

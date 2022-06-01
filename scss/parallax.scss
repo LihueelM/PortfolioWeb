@@ -1,9 +1,10 @@
 .parallax-01{
+    margin-top: -60.8px;
     width: 100%;
     height: 100vh;
-    background-image:url('../assets/parallax-01.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(10, 8, 33, 0.6)), url('../assets/parallax-01.jpg');
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -11,9 +12,11 @@
 }
 .parallax-02{
     @extend .parallax-01;
-    background-image:url('../assets/parallax-02.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(10, 8, 33, 0.6)),url('../assets/parallax-02.jpg');
+    margin-top: 0px;
 }
 .parallax-03{
     @extend .parallax-01;
-    background-image: url('../assets/parallax-03.jpg');
+    margin-top: 0px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(10, 8, 33, 0.6)), url('../assets/parallax-03.jpg');
 }

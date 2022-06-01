@@ -7,9 +7,10 @@ body {
   font-family: 'Poppins', sans-serif; }
 
 .parallax-01, .parallax-02, .parallax-03 {
+  margin-top: -60.8px;
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/parallax-01.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 8, 33, 0.6)), url("../assets/parallax-01.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,21 +19,23 @@ body {
   justify-content: center; }
 
 .parallax-02 {
-  background-image: url("../assets/parallax-02.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 8, 33, 0.6)), url("../assets/parallax-02.jpg");
+  margin-top: 0px; }
 
 .parallax-03 {
-  background-image: url("../assets/parallax-03.jpg"); }
+  margin-top: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 8, 33, 0.6)), url("../assets/parallax-03.jpg"); }
 
 .navbar__scss {
-  z-index: 1000;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.9);
   position: sticky;
   top: 0; }
   .navbar__scss a {
     font-size: 1.2rem;
     color: white; }
-  .navbar__scss a:hover {
-    color: #da8aff; }
+    .navbar__scss a:hover {
+      color: #3264e1; }
 
 :root {
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
@@ -42,7 +45,7 @@ body {
   flex-direction: column;
   max-height: 100%;
   justify-content: center;
-  margin-top: -50px; }
+  text-align: center; }
 
 .name {
   display: flex;
@@ -50,29 +53,33 @@ body {
   margin-bottom: 0.5em;
   font-weight: 1000;
   align-items: flex-start;
-  width: 34%; }
+  color: white; }
 
 .title {
   margin-bottom: 1em;
   font-size: 2.3rem;
   font-weight: 500;
-  width: 30%; }
+  color: #3264e1; }
 
 .item {
+  display: block;
   position: relative;
   padding-left: 0.5rem;
   animation-name: flechas;
-  animation-duration: 3.1s;
+  animation-duration: 1s;
   animation-fill-mode: forwards; }
 
 .descripcion {
   display: flex;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   position: relative;
+  text-align: center;
   animation-name: descripcion;
-  animation-duration: 3.1s;
+  opacity: 0;
+  animation-delay: 1s;
+  animation-duration: 1s;
   animation-fill-mode: forwards; }
 
 @keyframes flechas {
@@ -80,15 +87,59 @@ body {
     clip-path: var(--clippy); }
   100% {
     clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
-    background-color: rgba(85, 27, 200, 0.4);
-    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0);
     z-index: 1; } }
 
 @keyframes descripcion {
   0% {
     color: black; }
   100% {
-    color: whitesmoke;
-    background: rgba(21, 12, 74, 0.8);
-    border-radius: 1rem;
-    padding: 1rem; } }
+    color: white;
+    opacity: 1; } }
+
+.grid-container--tecnologias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2rem; }
+
+.itemTecnologia {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  align-self: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: 0.3s; }
+  .itemTecnologia:hover {
+    transform: scale(1.05); }
+  .itemTecnologia img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px; }
+
+.tecnologias {
+  margin: auto;
+  text-align: center;
+  color: whitesmoke; }
+  .tecnologias h2 {
+    font-size: 2rem;
+    margin-bottom: 2em; }
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.8s;
+  font-size: 1.2rem; }
+  .overlay:hover {
+    opacity: 1; }
