@@ -53,15 +53,14 @@ body {
 
 .name {
   display: flex;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   margin-bottom: 0.5em;
   font-weight: 1000;
-  align-items: flex-start;
   color: white; }
 
 .title {
   margin-bottom: 1em;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: #3264e1; }
 
@@ -109,7 +108,7 @@ body {
 
 .itemTecnologia {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 80%;
   align-self: center;
   justify-self: center;
@@ -149,12 +148,18 @@ body {
   .overlay:hover {
     opacity: 1; }
 
+.container__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
 .portfolio {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.8);
   width: 25%;
-  height: 50%;
+  height: 450px;
   border-radius: 2rem; }
   .portfolio h3 {
     top: 0;
@@ -172,9 +177,12 @@ body {
   .item__portfolio h4 {
     color: white; }
   .item__portfolio a {
-    width: 85%; }
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center; }
     .item__portfolio a img {
-      width: 100%;
+      width: 80%;
       border-radius: 1rem; }
   .item__portfolio p {
     text-align: center;
@@ -184,7 +192,7 @@ body {
 .formulario-container {
   background-color: #fff;
   width: 25%;
-  height: 50%;
+  height: 450px;
   border-radius: 2rem;
   padding: 2rem; }
 
@@ -214,3 +222,77 @@ body {
     border-radius: 1rem; }
     .formulario button:hover {
       background-color: rgba(250, 115, 10, 0.8); }
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 1.8rem; }
+  .title {
+    font-size: 1.5rem; }
+  .descripcion {
+    font-size: 1rem; }
+  .grid-container--tecnologias {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .tecnologias h2 {
+    font-size: 1.4rem; }
+  .tecnologias .itemTecnologia {
+    width: 75%; }
+  .container__section {
+    flex-direction: column;
+    padding: 1rem; }
+  .portfolio {
+    width: 50%;
+    height: 2%; }
+    .portfolio h3 {
+      font-size: 1.2rem; }
+    .portfolio h4 {
+      font-size: 1rem; }
+    .portfolio p {
+      font-size: 0.8rem; }
+  .formulario-container {
+    width: 50%;
+    height: 2%;
+    margin-top: 1rem; }
+    .formulario-container h3 {
+      font-size: 1.2rem; }
+    .formulario-container button {
+      height: 2.2rem; } }
+
+@media (max-width: 375px) {
+  .name {
+    font-size: 1.6rem; }
+  .title {
+    font-size: 1.3rem; }
+  .descripcion {
+    font-size: 0.8rem; }
+  .grid-container--tecnologias {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .tecnologias h2 {
+    font-size: 1.4rem; }
+  .tecnologias .itemTecnologia {
+    width: 80%;
+    margin-top: 2rem; }
+  .container__section {
+    flex-direction: column;
+    padding: 1rem; }
+  .portfolio {
+    width: 75%;
+    height: 2%; }
+    .portfolio h3 {
+      font-size: 1.2rem; }
+    .portfolio h4 {
+      font-size: 1rem; }
+    .portfolio p {
+      font-size: 0.8rem; }
+  .formulario-container {
+    width: 75%;
+    height: 2%;
+    margin-top: 1rem; }
+    .formulario-container h3 {
+      font-size: 1.2rem; }
+    .formulario-container button {
+      height: 2.2rem; } }
+
+footer {
+  background-color: rgba(255, 255, 255, 0.4); }

@@ -14,9 +14,8 @@
     <main>
         <header class="no-parallax--navbar navbar__scss">
           <!-- Barra de navegacion sticky -->
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="index.html"><img src="#" alt="Logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -32,7 +31,7 @@
         </header>
         <!-- Seccion parallax "Sobre mi" -->
         <section class="parallax-01" id="sobreMi">
-          <div class=" container sobre__mi">
+          <div class="sobre__mi">
             <h1 class="name item">Hola! Mi nombre es Lihueel Mansilla</h1>
             <h2 class="title item">Desarrollador Web</h2>
             <div class="container descripcion">
@@ -81,33 +80,35 @@
           </div>          
         </section>
         <!-- Seccion parallax Contacto -->
-        <section class="parallax-03" id="contacto">
-          <div class="portfolio">
-            <h3>Portfolio</h3>            
-            <div class="item__portfolio">
-              <h4>Critical Games</h4>
-              <a href=""><img src="images/CriticalGames.png" alt="Critical Games"></a>
-              <p>Este es mi primer proyecto realizado en el curso de desarrollo web de CoderHouse. Se trata sobre un sitio web responsive dedicado a la venta de videojuegos.</p>
-            </div>              
-          </div>
-          <div class="formulario-container">
-            <form class="formulario" action="">
-              <h3>Contactame</h3>
-              <input type="text" placeholder="Nombre">
-              <input type="email" placeholder="E-Mail">
-              <textarea placeholder="Mensaje"></textarea>
-              <button>Enviar</button>
-            </form>
-          </div>
+        <section class="parallax-03" id="contacto"> 
+          <div class="container__section">                
+            <div class="portfolio">
+              <h3>Portfolio</h3>            
+              <div class="item__portfolio">
+                <h4>Critical Games</h4>
+                <a href=""><img src="images/CriticalGames.png" alt="Critical Games"></a>
+                <p>Este es mi primer proyecto realizado en el curso de desarrollo web de CoderHouse. Se trata sobre un sitio web responsive dedicado a la venta de videojuegos.</p>
+              </div>              
+            </div>
+            <div class="formulario-container">
+              <form class="formulario" action="">
+                <h3>Contactame</h3>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="E-Mail">
+                <textarea placeholder="Mensaje"></textarea>
+                <button>Enviar</button>
+              </form>
+            </div> 
+          </div>          
         </section>
     </main>    
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">       
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <footer class="text-center text-white">       
+        <div class="text-center text-dark p-3">
           © 2022 Copyright:
           <a class="text-dark" href="https://github.com/LihueelM">Lihueel Mansilla</a>
           <a href="https://github.com/LihueelM"><i class="bi bi-github"></i></a>
-        </div>     
-
+          <a href="https://www.linkedin.com/in/lihueelemansilla/"><i class="bi bi-linkedin"></i></a>
+        </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

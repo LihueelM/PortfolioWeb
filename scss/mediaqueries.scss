@@ -1,0 +1,95 @@
+@media (max-width:768px){
+    .name{
+        font-size: 1.8rem;
+    }.title{
+        font-size: 1.5rem;
+    }.descripcion{
+        font-size: 1rem;
+    }
+    .grid-container--tecnologias{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .tecnologias{
+        h2{
+            font-size: 1.4rem;
+        }
+        .itemTecnologia{
+            width: 75%;
+        }
+    }
+    .container__section{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .portfolio{
+        width: 50%;
+        height: 2%;
+        h3{
+            font-size: 1.2rem;
+        }
+        h4{
+            font-size: 1rem;
+        }p{
+            font-size:0.8rem;
+        }
+    }
+    .formulario-container{
+        width: 50%;
+        height: 2%;
+        margin-top: 1rem;
+        h3{
+            font-size: 1.2rem;
+        }button{
+            height: 2.2rem;
+        }
+    }
+}
+@media (max-width:375px){
+    .name{
+        font-size: 1.6rem;
+    }.title{
+        font-size: 1.3rem;
+    }.descripcion{
+        font-size: 0.8rem;
+    }
+    .grid-container--tecnologias{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .tecnologias{
+        h2{
+            font-size: 1.4rem;
+        }
+        .itemTecnologia{
+            width: 80%;
+            margin-top: 2rem;
+        }
+    }
+    .container__section{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .portfolio{
+        width: 75%;
+        height: 2%;
+        h3{
+            font-size: 1.2rem;
+        }
+        h4{
+            font-size: 1rem;
+        }p{
+            font-size:0.8rem;
+        }
+    }
+    .formulario-container{
+        width: 75%;
+        height: 2%;
+        margin-top: 1rem;
+        h3{
+            font-size: 1.2rem;
+        }button{
+            height: 2.2rem;
+        }
+    }
+}

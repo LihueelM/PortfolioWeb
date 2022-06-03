@@ -1,9 +1,15 @@
+.container__section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 .portfolio{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
     width: 25%;
-    height: 50%;
+    height: 450px;  
     border-radius: 2rem;
     h3{
         top: 0;
@@ -23,9 +29,12 @@
         color: white;
     }
     a{
+        display: flex;
         width: 85%;
+        align-items: center;
+        justify-content: center;
         img{
-            width: 100%;
+            width: 80%;
             border-radius: 1rem;
         }
     }
@@ -38,7 +47,7 @@
 .formulario-container{
     background-color: #fff;
     width: 25%;
-    height: 50%;  
+    height: 450px;  
     border-radius: 2rem; 
     padding: 2rem;
 }
