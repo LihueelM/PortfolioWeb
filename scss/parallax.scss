@@ -23,3 +23,9 @@
     margin-top: 0px;
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(10, 8, 33, 0.6)), url('../assets/parallax-03.jpg');
 }
+.parallax-04{
+    @extend .parallax-01;
+    align-items: center;
+    margin-top: 0px;    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(10, 8, 33, 0.6)), url('../assets/parallax-04.jpg');
+}
