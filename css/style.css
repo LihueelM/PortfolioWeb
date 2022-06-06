@@ -24,8 +24,6 @@ body {
   margin-top: 0px; }
 
 .parallax-03 {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
   margin-top: 0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(10, 8, 33, 0.6)), url("../assets/parallax-03.jpg"); }
@@ -153,81 +151,81 @@ body {
   .overlay:hover {
     opacity: 1; }
 
-.container-formulario {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  width: 25%;
-  height: 450px;
-  border-radius: 2rem;
-  padding: 2rem;
-  transition: 1s; }
-
-.container-formulario:hover {
-  transform: scale(1.05); }
-
-.formulario {
+form {
+  width: 100%;
+  max-width: 500px;
+  background-color: whitesmoke;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; }
-  .formulario input, .formulario textarea {
+  margin: 1rem; }
+  form h3 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem; }
+  form input, form textarea {
+    margin: 1rem;
+    height: 40px;
     border: none;
     resize: none;
     outline: none;
-    padding: 15px,0px;
     width: 80%;
     margin: 20px;
     transition: all .5s;
-    border-bottom: 1px solid; }
-  .formulario input:focus, .formulario textarea:focus {
-    border-color: tomato; }
-  .formulario button {
+    border-bottom: 1px solid;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 1rem; }
+  form input:focus, form textarea:focus {
+    border-color: #ff5537; }
+  form button {
+    height: 70px;
+    width: 80%;
+    margin: 2rem;
     border: none;
     resize: none;
-    height: 60px;
-    width: 200px;
+    outline: none;
     transition: 1s;
-    color: #000;
     border-radius: 1rem; }
-    .formulario button:hover {
-      background-color: rgba(250, 115, 10, 0.8); }
+    form button:hover {
+      background-color: #e69c8f; }
 
-@media (max-width: 768px) {
-  .name {
-    font-size: 1.8rem; }
-  .title {
-    font-size: 1.5rem; }
-  .descripcion {
-    font-size: 1rem; }
-  .grid-container--tecnologias {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr); }
-  .tecnologias h2 {
-    font-size: 1.4rem; }
-  .tecnologias .itemTecnologia {
-    width: 75%; }
-  .container__section {
-    flex-direction: column;
-    padding: 1rem; }
-  .portfolio {
-    width: 50%;
-    height: 2%; }
-    .portfolio h3 {
-      font-size: 1.2rem; }
-    .portfolio h4 {
-      font-size: 1rem; }
-    .portfolio p {
-      font-size: 0.8rem; }
-  .formulario-container {
-    width: 50%;
-    height: 2%;
-    margin-top: 1rem; }
-    .formulario-container h3 {
-      font-size: 1.2rem; }
-    .formulario-container button {
-      height: 2.2rem; } }
+footer {
+  background-color: rgba(255, 255, 255, 0.4);
+  bottom: 0;
+  z-index: 1; }
+
+.container-portfolio {
+  display: flex;
+  flex-wrap: wrap; }
+
+.card-portfolio {
+  width: 500px;
+  max-width: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 12px #d7d7d7;
+  transition: 1s; }
+  .card-portfolio:hover {
+    transform: scale(1.05); }
+  .card-portfolio .title-card {
+    text-align: center;
+    padding-top: 5px; }
+    .card-portfolio .title-card h2 {
+      color: #3264e1;
+      font-size: 2rem; }
+  .card-portfolio .img-card img {
+    max-width: 100%;
+    padding: 12px;
+    border-radius: 1rem; }
+  .card-portfolio .texto-card {
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
+    color: white; }
 
 @media (max-width: 375px) {
   .name {
@@ -248,8 +246,8 @@ body {
     flex-direction: column;
     padding: 1rem; }
   .portfolio {
-    width: 75%;
-    height: 2%; }
+    width: 25rem;
+    height: 20rem; }
     .portfolio h3 {
       font-size: 1.2rem; }
     .portfolio h4 {
@@ -265,48 +263,17 @@ body {
     .formulario-container button {
       height: 2.2rem; } }
 
-footer {
-  background-color: rgba(255, 255, 255, 0.4);
-  bottom: 0;
-  z-index: 1; }
-
-.container__section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.8);
-  width: 25%;
-  height: 450px;
-  border-radius: 2rem; }
-  .portfolio h3 {
-    top: 0;
-    justify-self: center;
-    align-self: center;
-    margin-top: 1em;
-    color: #3264e1;
-    font-size: 1.6rem; }
-
-.item__portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .item__portfolio h4 {
-    color: white; }
-  .item__portfolio a {
-    display: flex;
-    width: 85%;
-    align-items: center;
-    justify-content: center; }
-    .item__portfolio a img {
-      width: 80%;
-      border-radius: 1rem; }
-  .item__portfolio p {
-    text-align: center;
-    padding: 1.2rem;
-    color: whitesmoke; }
+@media (max-width: 768px) {
+  .name {
+    font-size: 1.8rem; }
+  .title {
+    font-size: 1.5rem; }
+  .descripcion {
+    font-size: 1rem; }
+  .grid-container--tecnologias {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .tecnologias h2 {
+    font-size: 1.4rem; }
+  .tecnologias .itemTecnologia {
+    width: 75%; } }
